@@ -1,0 +1,31 @@
+{
+  "name": "key",
+  "version": "1.0.0",
+  "description": "Key is a desktop application that generates passwords",
+  "main": "key.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iArunava/Key.git"
+  },
+  "keywords": [
+    "Key",
+    "iarunava",
+    "password",
+    "random",
+    "generator",
+    "arunava"
+  ],
+  "author": "Arunava Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/iArunava/Key/issues"
+  },
+  "homepage": "https://github.com/iArunava/Key#readme"
+}
