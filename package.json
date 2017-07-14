@@ -1,7 +1,7 @@
 {
   "name": "key",
   "version": "1.0.0",
-  "description": "Key is a desktop application that generates passwords",
+  "description": "Key is a cross platform password manager",
   "main": "key.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
