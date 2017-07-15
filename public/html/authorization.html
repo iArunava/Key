@@ -2,12 +2,31 @@
 <html>
 <head>
 	<title> Authorization </title>
+
+	<link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
 	
-	<h2> Enter your master password </h2>
-	<input type=password>
+	<div class="container">
+	
+	<div class="row center-block">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center center-block">
+			<form>
+				<div class="form-group">
+					<label for="masterPasswordInput"><h2> Enter Master Password </h2></label>
+					<input type="password" class="form-control" id="masterPasswordInput" placeholder="Enter master password">
+				</div>
+				<div class="checkbox">
+						<label>
+								<input type="checkbox"> Don't show this again for this session
+						</label>
+				</div>
+				<button type="submit" class="btn btn-default"> Submit </button>
+			</form>
+		</div>
+	</div>
+	</div>
 </body>
 
 </html>
