@@ -9,7 +9,8 @@ function createAuthWindow () {
 	
 	authorizationWin = new BrowserWindow ({ width: 550, 
 						height: 200, 
-						resizable: true,
+						resizable: false,
+						center: true,
 						movable: false});
 
 	authorizationWin.loadURL(url.format ({
@@ -30,8 +31,8 @@ function createMainWin () {
 	
 	win = new BrowserWindow ({width: 800, height: 600});
 
-	win.loadURL (url.format ({
-				pathname: path.join (__dirname, "../html/index.html"),
+	win.loadURL(url.format ({
+				pathname: path.join(__dirname, "/lib/html/index.html"),
 				protocol: 'file',
 				slashes: true
 	
@@ -56,7 +57,9 @@ ipcMain.on ('master-password-verified', function () {
 	return (!win.isDestroyed() && !win.isVisible()) ? win.hide() : win.show();
 });
 
-app.on('ready', createAuthWindow);
+/* TODO Disabling Auth Window for ease of testing the application, revert it */
+//app.on('ready', createAuthWindow);
+app.on ('ready', createMainWin);
 
 app.on('window-all-closed', () => {
 	if (process.platform != 'darwin') {
