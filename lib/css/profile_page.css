@@ -1,3 +1,13 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
 #id--the-profile-picture {
 	margin: 10px auto;
 }
