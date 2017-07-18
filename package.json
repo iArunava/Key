@@ -22,6 +22,7 @@
   "author": "Arunava Chakraborty",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "electron": "^1.6.2"
   },
   "bugs": {
