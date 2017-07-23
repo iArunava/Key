@@ -4,8 +4,7 @@
   "description": "Key is a cross platform password manager",
   "main": "key.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron -r babel-register ."
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,13 @@
   "author": "Arunava Chakraborty",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
     "bootstrap": "^3.3.7",
-    "electron": "^1.6.2"
+    "electron": "^1.6.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "bugs": {
     "url": "https://github.com/iArunava/Key/issues"
